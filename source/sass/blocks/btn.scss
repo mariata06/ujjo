@@ -23,4 +23,16 @@
   @include hover-focus {
     opacity: 0.8;
   }
+
+  &--bg-red {
+    background-color: $color-radical-red;
+    min-width: 157px;
+    min-height: 52px;
+    color: $color-default-white;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
