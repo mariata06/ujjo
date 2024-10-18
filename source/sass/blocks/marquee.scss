@@ -1,0 +1,42 @@
+.marquee {
+  display: flex;
+  overflow: hidden;
+  /* Скрываем все, что выходит за пределы контейнера */
+  white-space: nowrap;
+  /* Предотвращаем перенос строк */
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  /* Отступ между текстом и иконкой */
+}
+
+.text {
+  font-size: 16px;
+  color: #333;
+}
+
+.icon-pepper {
+  font-size: 24px;
+  /* Размер иконки */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+    /* Начало с текущей позиции */
+  }
+
+  100% {
+    transform: translateX(-100%);
+    /* Уходит за пределы слева */
+  }
+}
+
+.marquee {
+  animation: scroll-left 15s linear infinite;
+  /* Анимация на 15 секунд с бесконечным повтором */
+}

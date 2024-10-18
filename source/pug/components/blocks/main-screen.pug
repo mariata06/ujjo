@@ -5,11 +5,8 @@ mixin main-screen()
         .main-screen__left
           .logo-text
             img(src="img/svg/ujjo-sauce.svg", width=697, height=425, alt="Logo ujjo sauce")
-          .marquee-text
-            .marquee(behavior="scroll" direction="left")
-              .marquee-content
-                span.text put some fire in your belly
-                +icon("icon-pepper", 64, 30)
+          .main-screen__marquee
+            +marquee()
           .image-left
             +img("content", "ujjo-sauce-img-1", "jpg", 657, 436, "Sauce photo on the table")
         .main-screen__right
