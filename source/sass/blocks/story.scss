@@ -31,6 +31,7 @@
   &__right {
     border-left: 0.5px solid $color-default-black;
     position: relative;
+    display: flex;
   }
 
   &__right-text {

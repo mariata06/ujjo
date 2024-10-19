@@ -1,14 +1,18 @@
 .promo-2 {
   // overflow: hidden;
   min-height: 78px;
+  z-index: 2;
+  position: relative;
+  background-color: $color-default-white;
 }
 
 .promo-2__content {
   border-top: 0.5px solid $color-default-black;
   border-left: 1px solid $color-default-black;
   border-right: 1px solid $color-default-black;
+  border-bottom: 1px solid $color-default-black;
   overflow: hidden;
   height: 100%;
   min-height: 78px;
-  padding: 25px 0;
+  // padding: 25px 0;
 }
